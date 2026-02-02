@@ -1,14 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roblox Dev Portfolio | Your Name</title>
+  <meta name="description" content="Roblox developer portfolio showcasing projects, skills, and experience." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Welcome to My Website</h1>
-  <p>This is my first public website.</p>
+  <header class="topbar">
+    <div class="container bar">
+      <a class="brand" href="#top">Your Name<span class="dot">.</span></a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Roblox Developer • Scripting • Systems</p>
+          <h1>I build Roblox experiences that feel polished and real.</h1>
+          <p class="sub">
+            I focus on clean scripting, smooth UI, and game systems that are fun and reliable.
+            Below are my best projects, what I built, and the skills I used.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Hire / Collab</a>
+          </div>
+
+          <div class="quick">
+            <div class="quick-card">
+              <span class="quick-label">Main Role</span>
+              <span class="quick-value">Scripter / Dev</span>
+            </div>
+            <div class="quick-card">
+              <span class="quick-label">Tools</span>
+              <span class="quick-value">Roblox Studio, Lua</span>
+            </div>
+            <div class="quick-card">
+              <span class="quick-label">Availability</span>
+              <span class="quick-value">Open to commissions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <h2>Featured Project</h2>
+            <p class="muted">Replace this with your #1 project.</p>
+            <div class="panel-list">
+              <div class="row"><span>Game:</span><strong>Your Game Name</strong></div>
+              <div class="row"><span>What I did:</span><strong>Systems + UI + data</strong></div>
+              <div class="row"><span>Links:</span>
+                <strong>
+                  <a href="#" target="_blank" rel="noopener">Play</a> •
+                  <a href="#" target="_blank" rel="noopener">Video</a>
+                </strong>
+              </div>
+            </div>
+            <p class="tiny">Tip: Add a screenshot later (I’ll show you how).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Your strongest work first. Add real links + what you contributed.</p>
+        </div>
+
+        <div class="grid">
+          <!-- PROJECT CARD 1 -->
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name #1</h3>
+              <span class="tag">Featured</span>
+            </div>
+            <p class="muted">
+              1–2 sentences: what the game is and why it’s cool. Keep it confident and simple.
+            </p>
+
+            <ul class="bullets">
+              <li><strong>My role:</strong> Scripter / UI / Systems</li>
+              <li><strong>Built:</strong> inventory, data saving, shop, quests (example)</li>
+              <li><strong>Tech:</strong> DataStore, RemoteEvents, ModuleScripts</li>
+            </ul>
+
+            <div class="links">
+              <a href="#" target="_blank" rel="noopener">Play</a>
+              <a href="#" target="_blank" rel="noopener">Video</a>
+              <a href="#" target="_blank" rel="noopener">Screenshots</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 2 -->
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name #2</h3>
+              <span class="tag ghost">System</span>
+            </div>
+            <p class="muted">
+              Example: “Combat + movement system with smooth animations and hit detection.”
+            </p>
+            <ul class="bullets">
+              <li><strong>My role:</strong> Gameplay programmer</li>
+              <li><strong>Built:</strong> cooldowns, hitboxes, VFX triggers, balancing</li>
+              <li><strong>Tech:</strong> Raycasting, attributes, state machines</li>
+            </ul>
+            <div class="links">
+              <a href="#" target="_blank" rel="noopener">Video</a>
+              <a href="#" target="_blank" rel="noopener">Demo Place</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 3 -->
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name #3</h3>
+              <span class="tag ghost">UI</span>
+            </div>
+            <p class="muted">
+              Example: “Clean UI + shop + gamepass flow with mobile-friendly layout.”
+            </p>
+            <ul class="bullets">
+              <li><strong>My role:</strong> UI + scripting</li>
+              <li><strong>Built:</strong> responsive menus, animations, confirmations</li>
+              <li><strong>Tech:</strong> TweenService, UI constraints, remote calls</li>
+            </ul>
+            <div class="links">
+              <a href="#" target="_blank" rel="noopener">Screenshots</a>
+              <a href="#" target="_blank" rel="noopener">Video</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Want more projects?</strong> Duplicate a project card and fill it in.
+          Quality > quantity.
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Pick what you actually do. It looks more real.</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Scripting (Lua)</h3>
+            <p class="muted">Clean ModuleScripts, remotes, server/client split, debugging.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Game Systems</h3>
+            <p class="muted">Inventory, quests, shops, progression, cooldowns, saving.</p>
+          </div>
+          <div class="skill-card">
+            <h3>UI / UX</h3>
+            <p class="muted">Menus, mobile-friendly UI, animations, clean layouts.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Performance</h3>
+            <p class="muted">Optimizing loops, avoiding lag, clean replication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <h2>About Me</h2>
+          <p class="muted">
+            Write 4–6 sentences that sound real. Mention what you specialize in and what kind of work you want.
+          </p>
+
+          <div class="about-box">
+            <p><strong>What I’m good at:</strong> systems that feel smooth, clean UI, reliable scripting.</p>
+            <p><strong>What I’m looking for:</strong> commissions, team roles, long-term projects.</p>
+            <p><strong>Time zone:</strong> EST</p>
+          </div>
+        </div>
+
+        <div class="proof">
+          <h3>Proof I’m legit</h3>
+          <p class="muted">Add evidence that builds trust:</p>
+          <ul class="bullets">
+            <li>Links to your games (public)</li>
+            <li>Short gameplay videos (YouTube / Streamable)</li>
+            <li>Before/after screenshots of systems you built</li>
+            <li>Any team credits / group roles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Make it easy for people to reach you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Message me</h3>
+            <p class="muted">Replace these with your real info:</p>
+            <div class="contact-lines">
+              <div><span>Discord:</span> <strong>YourDiscord#0000</strong></div>
+              <div><span>Email:</span> <strong>you@example.com</strong></div>
+              <div><span>Roblox:</span> <strong>@YourRobloxUser</strong></div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Commission info</h3>
+            <p class="muted">Example:</p>
+            <ul class="bullets">
+              <li>What you do: scripting, UI, systems</li>
+              <li>How you price: per system or per hour</li>
+              <li>What you need: scope, references, deadline</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="tiny center">
+          © <span id="year"></span> Your Name • Built with GitHub Pages
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
